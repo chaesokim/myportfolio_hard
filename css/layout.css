@@ -1,0 +1,290 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css2?family=Jua&family=Lemon&family=Nanum+Myeongjo&family=Song+Myung&family=Yeseva+One&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.08em;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+ul, li, dl, dt, dd, ol {
+  list-style: none;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.nanumgothic * {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.font-yes {
+  font-family: "Yeseva One";
+}
+
+.songmyung {
+  color: black;
+  font-family: "Song Myung";
+  font-size: 3.5rem;
+}
+
+.juasub {
+  font-family: "Jua";
+  font-size: 1.5rem;
+}
+
+.nanummyeongsub {
+  font-family: "Nanum+Myeongjo";
+  font-size: 1.2rem;
+  color: black;
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+.updateDate img {
+  width: 100px;
+}
+
+.white-space-prewrap {
+  white-space: pre-wrap;
+}
+
+.letter-spacing {
+  letter-spacing: 0.3em;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+}
+
+#nav a {
+  display: block;
+}
+
+#nav h1 a img {
+  width: 150px;
+}
+
+#nav .depth1 {
+  display: flex;
+}
+
+#nav .depth1 li {
+  margin: 0 15px;
+}
+
+#nav a {
+  font-family: "Yeseva One";
+  color: white;
+}
+
+section:not(#contact) {
+  height: 100vh;
+}
+
+section:not(#home, .pjtsection) {
+  padding: 4rem 10rem 0 10rem;
+}
+
+#drunkenmonkey {
+  padding: 4rem 10rem;
+}
+
+footer {
+  background: #D9D9D9;
+  padding: 0 10rem;
+}
+
+.pjtsection {
+  padding: 0rem 10rem 4rem 10rem;
+  height: auto !important;
+}
+.pjtsection .pjtheight {
+  height: 600px !important;
+}
+.pjtsection .pjtheight img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#home, #about, #contact {
+  background-color: black;
+  color: #ffffff;
+}
+
+#skill, #project {
+  background-color: #ffffff;
+  color: #000;
+}
+
+#root a {
+  color: black;
+}
+#root a:hover {
+  color: rgb(227, 96, 73);
+}
+#root h1 {
+  max-width: 9.5rem;
+}
+#root h1 svg {
+  height: 2.8rem;
+  transform: translateY(-30%);
+  transform-origin: center;
+  transition: 0.5s;
+}
+#root h1 svg #blackIcon {
+  transform: translateY(-200%);
+  transition: 0.5s;
+}
+#root h1 svg #deaback {
+  transform: translateY(-200%);
+  transition: 0.5s;
+}
+#root .text-align-right {
+  text-align: right;
+}
+#root .lemontitle {
+  font-family: "Lemon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 131px;
+}
+#root #hd {
+  font-size: 30px;
+  background-color: transparent;
+}
+#root #hd a {
+  color: white;
+}
+#root #hd.scroll {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#root #hd #allMenu {
+  font-weight: 500;
+}
+#root .workSection .swiper-wrapper .swiper-slide {
+  min-height: calc(80vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#root .workSection .swiper-wrapper .enfp {
+  background: url("../img/swiper1.png") no-repeat center;
+  background-size: cover;
+  color: white;
+}
+@media (max-width: 768px) {
+  #root .workSection .swiper-wrapper .enfp {
+    background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
+  }
+}
+#root .workSection .swiper-wrapper .versatile {
+  background: url("../img/swiper1.png") no-repeat center;
+  background-size: cover;
+  color: white;
+}
+@media (max-width: 768px) {
+  #root .workSection .swiper-wrapper .versatile {
+    background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
+  }
+}
+#root .workSection .swiper-wrapper .sensible {
+  background: url("../img/swiper1.png") no-repeat center;
+  background-size: cover;
+  color: white;
+}
+@media (max-width: 768px) {
+  #root .workSection .swiper-wrapper .sensible {
+    background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
+  }
+}
+#root .workSection .swiper-scrollbar-horizontal {
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.swipertextbox {
+  position: absolute;
+  left: 10rem;
+  top: 5rem;
+}
+
+.logolist {
+  width: 10rem;
+  display: flex;
+}
+
+.flow-text {
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 10rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.flow-text:hover {
+  color: black !important;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.flow-text:hover .flow-wrap {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.flow-wrap {
+  -webkit-animation: textLoop 10s linear infinite;
+  animation: textLoop 10s linear infinite;
+  padding-right: 1.4881vw;
+}
+
+@-webkit-keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+#myjob {
+  transform: translateY(2300%);
+}
+
+.bigtitle {
+  font-size: 100px;
+}/*# sourceMappingURL=layout.css.map */
